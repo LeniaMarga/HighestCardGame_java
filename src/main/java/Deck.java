@@ -14,10 +14,6 @@ public class Deck {
         return this.cards.size ( );
     }
 
-    public Card randomize() {
-        Collections.shuffle(this.cards);
-        return cards.get(0);
-    }
 
     public void fill52Cards() {
 
@@ -28,6 +24,10 @@ public class Deck {
         }
     }
 
+    public Card randomize() {
+        Collections.shuffle(this.cards);
+        return cards.get(0);
+    }
 
 
 

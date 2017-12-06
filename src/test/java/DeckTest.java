@@ -2,7 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 import static org.junit.Assert.assertEquals;
 
@@ -45,35 +45,3 @@ public class DeckTest {
 }
 
 
-//
-
-//
-//public class CountriesPopulations {
-//
-//    public static void main(String[] args) {
-//        HashMap<String, Long> countriesPopulations = new HashMap<> ();
-//        countriesPopulations.put("UK", (long) 64100000);
-//        countriesPopulations.put("Germany", (long) 80620000);
-//        countriesPopulations.put("France", (long) 66030000);
-//        countriesPopulations.put("Japan", (long) 127300000);
-//
-//        System.out.println(countriesPopulations.get("UK"));
-//        System.out.println(countriesPopulations.get("France"));
-//
-//        countriesPopulations.put("Japan", (long) 128300000);
-//        System.out.println(countriesPopulations.get("Japan"));
-//
-//
-//        countriesPopulations.containsValue ((long) 128300000);
-//        System.out.println("Populations are "+countriesPopulations.values ());
-//        System.out.println("Countries are "+countriesPopulations.keySet ());
-//
-//    }
-//}
-//methods:
-//.put(key, value)
-//.get(key)
-//.size()
-//.clear()
-//.containsValue(value)
-//.remove(key)

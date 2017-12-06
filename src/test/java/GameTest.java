@@ -12,12 +12,13 @@ public class GameTest {
     ArrayList<Card> cards;
     ArrayList<Card> gameCards;
     Player player;
-
-//    Card card;
+    Card card;
 
     @Before
     public void before(){
-//        card = new Card (SuitType.DIAMONDS, ValueType.ACE);
+        Card card1 = new Card (SuitType.DIAMONDS, ValueType.ACE);
+        Card card2 = new Card (SuitType.HEARTS, ValueType.ACE);
+        cards = new ArrayList<Card>();
         deck = new Deck(cards);
         Player player1 = new Player("Eleni");
         Player player2 = new Player("George");
