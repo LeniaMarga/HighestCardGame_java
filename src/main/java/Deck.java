@@ -10,26 +10,20 @@ public class Deck {
         this.cards = cards;
     }
 
-    public ArrayList<Card> getCards() {
-        ArrayList<Card> cardsCopy = new ArrayList<> (this.cards);
-        return cardsCopy;
-    }
-
     public int cardCount() {
         return this.cards.size ( );
     }
 
     public Card randomize() {
-        Collections.shuffle (this.cards);
-        return cards.get (0);
+        Collections.shuffle(this.cards);
+        return cards.get(0);
     }
 
     public void fill52Cards() {
-        int i = 0;
+
         for (SuitType suit : SuitType.values ( )) {
             for (ValueType value : ValueType.values ( )) {
                 cards.add (new Card (suit, value));
-                i++;
             }
         }
     }

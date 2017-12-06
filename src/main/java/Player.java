@@ -17,6 +17,7 @@ public class Player {
     }
 
     public void addCard(Deck deck){
-            this.hand.add(deck.randomize()); }
+        this.hand.add(deck.randomize());
+    }
 
 }

@@ -25,12 +25,4 @@ public class Game {
     }
 
 
-//    public void takeCard(Card card){
-//        addCard(card);
-//    }
-
-//
-//
-
-
 }

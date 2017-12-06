@@ -12,7 +12,7 @@ public class GameTest {
     ArrayList<Card> cards;
     ArrayList<Card> gameCards;
     Player player;
-    Hand hand;
+
 //    Card card;
 
     @Before
@@ -27,40 +27,14 @@ public class GameTest {
     }
 
 
-//    @Test
-//    public void playerPickCard(){
-//       Card card1 = game.addCard(deck.randomize ());
-//
-//
-//       assertEquals (2, game.gameCardCount());
-//    }
+    @Test
+    public void playerPickCard(){
+       Card card1 = game.addCard(deck.randomize());
+       Card card2 = game.addCard(deck.randomize ());
+       assertEquals (2, game.gameCardCount());
+    }
 
 
-
-
-
-//
-//    @Test
-//    public void canAddBook(){
-//        library.addBook(book);
-//        assertEquals (1, library.bookCount());
-//
-//    }
-//
-//    @Test
-//    public void canRemoveBook(){
-//        library.addBook(book);
-//        library.removeBook();
-//        assertEquals (0, library.bookCount());
-//
-//    }
-//
-//    @Test
-//    public void canCollectBook(){
-//        publisher.addBook(book);
-//        library.collectBook(publisher);
-//        assertEquals (1, library.bookCount());
-//    }
 
 
 }

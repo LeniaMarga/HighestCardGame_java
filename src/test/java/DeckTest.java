@@ -27,25 +27,16 @@ public class DeckTest {
     }
 
     @Test
-    public void canGetCopyOfCards(){
-        cards.add(card);
-        ArrayList<Card> cardCopy = deck.getCards();
-        assertEquals(1, deck.cardCount());
-    }
-
-    @Test
     public void testHas52Cards() {
         deck.fill52Cards ();
         assertEquals (52, deck.cardCount ());
     }
 
-
     @Test
     public void giveCard() {
-      deck.getCards ();
       deck.fill52Cards ();
-      Card selectedcard = deck.randomize ();
-      assertEquals (52, deck.cardCount ());
+      Card selectedCard = deck.randomize ();
+      assertEquals (selectedCard, deck.randomize ());
     }
 
 
